@@ -463,7 +463,11 @@ export default function SwedishTutor() {
     const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
     const recognition = new SR();
     const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-    try { recognition.lang = inputLang; } catch {}
+    // iOS Safari's SpeechRecognition is brittle — only setting lang AFTER start() avoids
+    // a "did not match the expected pattern" SyntaxError on some iOS versions.
+    if (!isIOS) {
+      try { recognition.lang = inputLang; } catch {}
+    }
     try { recognition.interimResults = true; } catch {}
     // iOS Safari throws on continuous=true; let it auto-stop instead and treat each utterance
     // as a fresh recording the user can append to.
