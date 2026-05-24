@@ -188,6 +188,7 @@ export default function SwedishTutor() {
   const [isMobile, setIsMobile] = useState(
     () => typeof window !== "undefined" && window.matchMedia("(max-width: 768px)").matches
   );
+  const isIOS = typeof window !== "undefined" && /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   useEffect(() => {
@@ -1350,15 +1351,22 @@ export default function SwedishTutor() {
               </div>
             ) : (
               <>
-                <button onClick={startListening} disabled={isThinking || isSpeaking} style={{
-                  background: isMobile ? "rgba(0,0,0,0.04)" : "transparent",
-                  border: isMobile ? `1px solid ${BORDER}` : "none",
-                  width: isMobile ? 48 : 36, height: isMobile ? 48 : 36,
-                  borderRadius: isMobile ? 12 : 8,
-                  cursor: isThinking || isSpeaking ? "not-allowed" : "pointer",
-                  opacity: isThinking || isSpeaking ? 0.4 : 1,
-                  display: "flex", alignItems: "center", justifyContent: "center",
-                }}>
+                <button
+                  onClick={isIOS
+                    ? () => setError("Tap into the text box, then use the iPhone keyboard's mic icon (next to the spacebar) to dictate. Apple's keyboard dictation works better than in-browser voice on iPhone.")
+                    : startListening
+                  }
+                  disabled={isThinking || isSpeaking}
+                  title={isIOS ? "On iPhone, use the keyboard's mic icon to dictate" : "Tap to speak"}
+                  style={{
+                    background: isMobile ? "rgba(0,0,0,0.04)" : "transparent",
+                    border: isMobile ? `1px solid ${BORDER}` : "none",
+                    width: isMobile ? 48 : 36, height: isMobile ? 48 : 36,
+                    borderRadius: isMobile ? 12 : 8,
+                    cursor: isThinking || isSpeaking ? "not-allowed" : "pointer",
+                    opacity: isThinking || isSpeaking ? 0.4 : 1,
+                    display: "flex", alignItems: "center", justifyContent: "center",
+                  }}>
                   <Icon name="mic_none" size={isMobile ? 26 : 22} style={{ color: TEXT }} />
                 </button>
                 {textInput.trim() && (
