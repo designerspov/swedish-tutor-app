@@ -1031,50 +1031,49 @@ export default function SwedishTutor() {
             />
           )}
 
-          {isMobile && !isListening && (
-            <button
-              onClick={() => {
-                const wasOn = audioModeRef.current;
-                setAudioMode(!wasOn);
-                if (wasOn) {
-                  synthRef.current.cancel();
-                  setIsSpeaking(false);
-                }
-              }}
-              style={{
-                display: "flex", alignItems: "center", gap: 12,
-                background: "rgba(0,0,0,0.02)", border: `1px solid ${BORDER}`,
-                borderRadius: 10, padding: "10px 14px", width: "100%",
-                cursor: "pointer", fontFamily: FONT,
-              }}
-            >
-              <Icon
-                name={audioMode ? "volume_up" : "volume_off"}
-                size={20}
-                style={{ color: audioMode ? PURPLE : TEXT_PLACEHOLDER }}
-              />
-              <span style={{ fontSize: 14, color: TEXT, fontWeight: 500, flex: 1, textAlign: "left" }}>
-                Speaking mode
-              </span>
-              <span style={{
-                width: 48, height: 28, borderRadius: 14,
-                background: audioMode ? PURPLE : BORDER,
-                padding: 2, boxSizing: "border-box",
-                display: "flex", transition: "background 0.2s",
-                flexShrink: 0,
-              }}>
-                <span style={{
-                  width: 24, height: 24, borderRadius: "50%",
-                  background: "white",
-                  transform: audioMode ? "translateX(20px)" : "translateX(0)",
-                  transition: "transform 0.2s",
-                  boxShadow: "0 1px 3px rgba(0,0,0,0.25)",
-                }} />
-              </span>
-            </button>
-          )}
-
           <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+            {isMobile && !isListening && (
+              <button
+                onClick={() => {
+                  const wasOn = audioModeRef.current;
+                  setAudioMode(!wasOn);
+                  if (wasOn) {
+                    synthRef.current.cancel();
+                    setIsSpeaking(false);
+                  }
+                }}
+                style={{
+                  display: "flex", alignItems: "center", gap: 8,
+                  background: "transparent", border: "none", padding: 0,
+                  cursor: "pointer", height: 44, fontFamily: FONT,
+                }}
+              >
+                <Icon
+                  name={audioMode ? "volume_up" : "volume_off"}
+                  size={20}
+                  style={{ color: audioMode ? PURPLE : TEXT_PLACEHOLDER }}
+                />
+                <span style={{ fontSize: 13, color: TEXT, fontWeight: 500 }}>
+                  Conversation
+                </span>
+                <span style={{
+                  width: 44, height: 24, borderRadius: 12,
+                  background: audioMode ? PURPLE : BORDER,
+                  padding: 2, boxSizing: "border-box",
+                  display: "flex", transition: "background 0.2s",
+                  flexShrink: 0, marginLeft: 4,
+                }}>
+                  <span style={{
+                    width: 20, height: 20, borderRadius: "50%",
+                    background: "white",
+                    transform: audioMode ? "translateX(20px)" : "translateX(0)",
+                    transition: "transform 0.2s",
+                    boxShadow: "0 1px 3px rgba(0,0,0,0.25)",
+                  }} />
+                </span>
+              </button>
+            )}
+
             {!isMobile && (
             <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
               <div style={{
@@ -1123,7 +1122,7 @@ export default function SwedishTutor() {
                 }}
               >
                 <span style={{ fontSize: 12, color: TEXT, fontWeight: 500 }}>
-                  Speaking mode
+                  Conversation
                 </span>
                 <span style={{
                   width: 36, height: 20, borderRadius: 10,
@@ -1209,7 +1208,7 @@ export default function SwedishTutor() {
             )}
 
             {isMobile && !isListening && (
-              <div style={{ position: "relative" }} ref={moreMenuRef}>
+              <div style={{ position: "relative", marginLeft: "auto", marginRight: 8 }} ref={moreMenuRef}>
                 <button
                   onClick={() => setMoreMenuOpen(o => !o)}
                   aria-label="More options"
@@ -1226,7 +1225,7 @@ export default function SwedishTutor() {
                   <div style={{
                     position: "absolute",
                     bottom: "calc(100% + 8px)",
-                    left: 0,
+                    right: 0,
                     minWidth: 240,
                     background: "white",
                     border: `1px solid ${BORDER}`,
@@ -1315,7 +1314,7 @@ export default function SwedishTutor() {
               </div>
             )}
 
-            <div style={{ display: "flex", alignItems: "center", gap: 12, marginLeft: isMobile ? "auto" : 0 }}>
+            <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
 
             {isListening ? (
               <div style={{ display: "flex", alignItems: "center", gap: isMobile ? 10 : 12, height: isMobile ? 48 : 36 }}>
@@ -1351,24 +1350,23 @@ export default function SwedishTutor() {
               </div>
             ) : (
               <>
-                <button
-                  onClick={isIOS
-                    ? () => setError("Tap into the text box, then use the iPhone keyboard's mic icon (next to the spacebar) to dictate. Apple's keyboard dictation works better than in-browser voice on iPhone.")
-                    : startListening
-                  }
-                  disabled={isThinking || isSpeaking}
-                  title={isIOS ? "On iPhone, use the keyboard's mic icon to dictate" : "Tap to speak"}
-                  style={{
-                    background: isMobile ? "rgba(0,0,0,0.04)" : "transparent",
-                    border: isMobile ? `1px solid ${BORDER}` : "none",
-                    width: isMobile ? 48 : 36, height: isMobile ? 48 : 36,
-                    borderRadius: isMobile ? 12 : 8,
-                    cursor: isThinking || isSpeaking ? "not-allowed" : "pointer",
-                    opacity: isThinking || isSpeaking ? 0.4 : 1,
-                    display: "flex", alignItems: "center", justifyContent: "center",
-                  }}>
-                  <Icon name="mic_none" size={isMobile ? 26 : 22} style={{ color: TEXT }} />
-                </button>
+                {!isMobile && (
+                  <button
+                    onClick={startListening}
+                    disabled={isThinking || isSpeaking}
+                    title="Tap to speak"
+                    style={{
+                      background: "transparent",
+                      border: "none",
+                      width: 36, height: 36,
+                      borderRadius: 8,
+                      cursor: isThinking || isSpeaking ? "not-allowed" : "pointer",
+                      opacity: isThinking || isSpeaking ? 0.4 : 1,
+                      display: "flex", alignItems: "center", justifyContent: "center",
+                    }}>
+                    <Icon name="mic_none" size={22} style={{ color: TEXT }} />
+                  </button>
+                )}
                 {textInput.trim() && (
                   <button onClick={sendText} disabled={isThinking} style={{
                     background: PURPLE, border: "none", borderRadius: isMobile ? 12 : 8,
