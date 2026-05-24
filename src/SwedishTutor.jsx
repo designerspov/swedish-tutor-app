@@ -1033,7 +1033,7 @@ export default function SwedishTutor() {
                 style={{ color: audioMode ? PURPLE : TEXT_PLACEHOLDER }}
               />
               <span style={{ fontSize: 14, color: TEXT, fontWeight: 500, flex: 1, textAlign: "left" }}>
-                Respond with audio
+                Auto responses
               </span>
               <span style={{
                 width: 48, height: 28, borderRadius: 14,
@@ -1102,7 +1102,7 @@ export default function SwedishTutor() {
                 }}
               >
                 <span style={{ fontSize: 12, color: TEXT, fontWeight: 500 }}>
-                  Respond with audio
+                  Auto responses
                 </span>
                 <span style={{
                   width: 36, height: 20, borderRadius: 10,
