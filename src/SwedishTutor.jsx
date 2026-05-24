@@ -462,9 +462,12 @@ export default function SwedishTutor() {
     }
     const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
     const recognition = new SR();
-    recognition.lang = inputLang;
-    recognition.interimResults = true;
-    recognition.continuous = true;
+    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+    try { recognition.lang = inputLang; } catch {}
+    try { recognition.interimResults = true; } catch {}
+    // iOS Safari throws on continuous=true; let it auto-stop instead and treat each utterance
+    // as a fresh recording the user can append to.
+    try { recognition.continuous = !isIOS; } catch {}
 
     recognition.onstart = () => {
       setIsListening(true);
@@ -472,6 +475,9 @@ export default function SwedishTutor() {
       transcriptRef.current = "";
       setError("");
       synthRef.current.cancel();
+      // On iOS the mic auto-stops on silence — treat natural end as a "pause" so the
+      // transcript is committed back into the textbox.
+      if (!recognition.continuous) keepOnEndRef.current = true;
     };
     recognition.onresult = (e) => {
       const t = Array.from(e.results).map(r => r[0].transcript).join("");
@@ -493,7 +499,17 @@ export default function SwedishTutor() {
       if (e.error !== "no-speech") setError("Mikrofonfel: " + e.error);
     };
     recognitionRef.current = recognition;
-    recognition.start();
+    try {
+      recognition.start();
+    } catch (err) {
+      setIsListening(false);
+      const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+      setError(
+        isIOS
+          ? "Voice input isn't supported in this browser. Tip: tap into the text box and use the iPhone keyboard's mic (the icon next to the spacebar) to dictate instead."
+          : `Could not start microphone: ${err.message || err.name || "unknown"}`
+      );
+    }
   }, [inputLang]);
 
   const submitListening = useCallback(async () => {
