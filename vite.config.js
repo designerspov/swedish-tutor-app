@@ -6,10 +6,10 @@ export default defineConfig({
   server: {
     port: 5173,
     proxy: {
-      "/api/anthropic": {
+      "/api/messages": {
         target: "https://api.anthropic.com",
         changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api\/anthropic/, ""),
+        rewrite: () => "/v1/messages",
         configure: (proxy) => {
           proxy.on("proxyReq", (proxyReq) => {
             const key = process.env.ANTHROPIC_API_KEY;

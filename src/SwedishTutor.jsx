@@ -339,7 +339,7 @@ export default function SwedishTutor() {
 
   const generateTitle = useCallback(async (id, userMsg, assistantMsg) => {
     try {
-      const resp = await fetch("/api/anthropic/v1/messages", {
+      const resp = await fetch("/api/messages", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -391,7 +391,7 @@ export default function SwedishTutor() {
     const suffix = lesson ? lessonContext(lesson) : FREE_CHAT_SUFFIX;
 
     try {
-      const response = await fetch("/api/anthropic/v1/messages", {
+      const response = await fetch("/api/messages", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -438,7 +438,7 @@ export default function SwedishTutor() {
       ? "You are given a speech-to-text transcript without punctuation. Add appropriate punctuation (periods, commas, question marks, exclamation marks) and capitalize the start of each sentence. Do NOT add or change any words. Reply with only the corrected text — no quotes, no prefix, no explanation."
       : "Du får en tal-till-text-transkription utan skiljetecken. Lägg till lämpliga svenska skiljetecken (punkt, komma, frågetecken, utropstecken) och stor bokstav i början av varje mening. Lägg INTE till eller ändra några ord. Svara endast med den korrigerade texten — inga citattecken, ingen prefix, ingen förklaring.";
     try {
-      const resp = await fetch("/api/anthropic/v1/messages", {
+      const resp = await fetch("/api/messages", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
