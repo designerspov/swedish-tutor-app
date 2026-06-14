@@ -1,6 +1,7 @@
 import { useState, useMemo } from "react";
 import { CardPanel, CardLabel, Prompt, BigWord, TextField, PrimaryButton, GhostButton, HintButton, HintLine } from "./cardKit.jsx";
 import FeedbackStrip from "./FeedbackStrip.jsx";
+import FormsBreakdown from "./FormsBreakdown.jsx";
 import { FONT, TEXT_MUTED } from "../../../theme.js";
 import { matchAnswer, matchForm } from "../../../utils/answerMatcher.js";
 
@@ -70,6 +71,7 @@ export default function IdentifyCard({ verb, onResult }) {
               <><strong>{shownWord}</strong> is the {shownForm} of <strong>{verb.swedish.infinitive}</strong>.</>
             )}
           </FeedbackStrip>
+          {!correct && <FormsBreakdown verb={verb} answerForm={shownForm} userInput={verbVal} />}
           <PrimaryButton onClick={() => onResult(correct, correct ? [] : [shownForm])}>Next word →</PrimaryButton>
         </>
       )}

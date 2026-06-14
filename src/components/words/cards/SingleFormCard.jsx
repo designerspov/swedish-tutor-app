@@ -4,6 +4,7 @@ import {
   PrimaryButton, GhostButton, HintButton, HintLine, verbGroupHint,
 } from "./cardKit.jsx";
 import FeedbackStrip from "./FeedbackStrip.jsx";
+import FormsBreakdown from "./FormsBreakdown.jsx";
 import { matchAnswer } from "../../../utils/answerMatcher.js";
 
 const PROMPT_LABEL = {
@@ -62,6 +63,7 @@ export default function SingleFormCard({ verb, form, onResult }) {
               <>You wrote “{val.trim()}” → <strong>{answer}</strong>.</>
             )}
           </FeedbackStrip>
+          {!correct && <FormsBreakdown verb={verb} answerForm={form} userInput={val} />}
           <PrimaryButton onClick={() => onResult(correct, correct ? [] : [form])}>Next word →</PrimaryButton>
         </>
       )}

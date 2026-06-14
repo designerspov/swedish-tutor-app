@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { CardPanel, CardLabel, Prompt, BigWord, Hint, TextField, PrimaryButton, GhostButton, HintButton, HintLine } from "./cardKit.jsx";
 import FeedbackStrip from "./FeedbackStrip.jsx";
+import FormsBreakdown from "./FormsBreakdown.jsx";
 import { matchAnswer } from "../../../utils/answerMatcher.js";
 
 // Card 1: translate the English verb into the Swedish infinitive.
@@ -50,6 +51,7 @@ export default function TranslateCard({ verb, onResult }) {
               <>You wrote “{val.trim()}” → <strong>{verb.swedish.infinitive}</strong>. Group {verb.verbGroup} verb.</>
             )}
           </FeedbackStrip>
+          {!correct && <FormsBreakdown verb={verb} answerForm="infinitive" userInput={val} />}
           <PrimaryButton onClick={() => onResult(correct)}>Next word →</PrimaryButton>
         </>
       )}

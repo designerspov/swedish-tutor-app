@@ -1,6 +1,7 @@
 import { useState, useMemo } from "react";
 import { CardPanel, CardLabel, Prompt, Hint, TextField, PrimaryButton, GhostButton, HintButton, HintLine } from "./cardKit.jsx";
 import FeedbackStrip from "./FeedbackStrip.jsx";
+import FormsBreakdown from "./FormsBreakdown.jsx";
 import { FONT, TEXT, PRIMARY } from "../../../theme.js";
 import { matchAnswer } from "../../../utils/answerMatcher.js";
 
@@ -85,6 +86,7 @@ export default function ContextCard({ verb, onResult }) {
               <>You wrote “{val.trim()}” → <strong>{sentence.answer}</strong> ({sentence.form}).</>
             )}
           </FeedbackStrip>
+          {!correct && <FormsBreakdown verb={verb} answerForm={sentence.form} userInput={val} />}
           <PrimaryButton onClick={() => onResult(correct, correct ? [] : [sentence.form])}>
             Next word →
           </PrimaryButton>
