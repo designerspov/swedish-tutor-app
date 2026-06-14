@@ -1,0 +1,277 @@
+[
+  {
+    "id": "v051",
+    "swedish": { "infinitive": "prata", "present": "pratar", "past": "pratade", "supine": "pratat", "imperative": "prata" },
+    "english": "to talk / to chat",
+    "verbGroup": 1,
+    "contextSentences": [
+      { "sentence": "Vi ___ svenska varje dag.", "answer": "pratar", "form": "present", "hint": "Habit — present tense." },
+      { "sentence": "Igår ___ vi länge på telefon.", "answer": "pratade", "form": "past", "hint": "Yesterday — past tense." },
+      { "sentence": "Kan du ___ lite långsammare?", "answer": "prata", "form": "infinitive", "hint": "After kan — which form?" }
+    ]
+  },
+  {
+    "id": "v052",
+    "swedish": { "infinitive": "tala", "present": "talar", "past": "talade", "supine": "talat", "imperative": "tala" },
+    "english": "to speak",
+    "verbGroup": 1,
+    "contextSentences": [
+      { "sentence": "Hon ___ tre språk flytande.", "answer": "talar", "form": "present", "hint": "Right now — present tense." },
+      { "sentence": "Läraren ___ tydligt under lektionen.", "answer": "talade", "form": "past", "hint": "Earlier — past tense." },
+      { "sentence": "Jag har ___ med chefen om saken.", "answer": "talat", "form": "supine", "hint": "After har — supine." }
+    ]
+  },
+  {
+    "id": "v053",
+    "swedish": { "infinitive": "berätta", "present": "berättar", "past": "berättade", "supine": "berättat", "imperative": "berätta" },
+    "english": "to tell / to narrate",
+    "verbGroup": 1,
+    "contextSentences": [
+      { "sentence": "___ en saga för barnen!", "answer": "Berätta", "form": "imperative", "hint": "A command — imperative." },
+      { "sentence": "Mormor ___ ofta om sin barndom.", "answer": "berättar", "form": "present", "hint": "Habit — present tense." },
+      { "sentence": "Han ___ hela historien för oss igår.", "answer": "berättade", "form": "past", "hint": "Yesterday — past tense." }
+    ]
+  },
+  {
+    "id": "v054",
+    "swedish": { "infinitive": "fråga", "present": "frågar", "past": "frågade", "supine": "frågat", "imperative": "fråga" },
+    "english": "to ask",
+    "verbGroup": 1,
+    "contextSentences": [
+      { "sentence": "Jag ___ alltid om jag inte förstår.", "answer": "frågar", "form": "present", "hint": "Habit — present tense." },
+      { "sentence": "Hon ___ vägen till stationen.", "answer": "frågade", "form": "past", "hint": "Earlier — past tense." },
+      { "sentence": "Du kan ___ läraren om hjälp.", "answer": "fråga", "form": "infinitive", "hint": "After kan — which form?" }
+    ]
+  },
+  {
+    "id": "v055",
+    "swedish": { "infinitive": "svara", "present": "svarar", "past": "svarade", "supine": "svarat", "imperative": "svara" },
+    "english": "to answer / to reply",
+    "verbGroup": 1,
+    "contextSentences": [
+      { "sentence": "___ på frågan, tack!", "answer": "Svara", "form": "imperative", "hint": "A command — imperative." },
+      { "sentence": "Han ___ inte på mitt mejl.", "answer": "svarade", "form": "past", "hint": "Earlier — past tense." },
+      { "sentence": "Jag har redan ___ på alla frågor.", "answer": "svarat", "form": "supine", "hint": "After har — supine." }
+    ]
+  },
+  {
+    "id": "v056",
+    "swedish": { "infinitive": "ropa", "present": "ropar", "past": "ropade", "supine": "ropat", "imperative": "ropa" },
+    "english": "to shout / to call out",
+    "verbGroup": 1,
+    "contextSentences": [
+      { "sentence": "Barnen ___ glatt på lekplatsen.", "answer": "ropar", "form": "present", "hint": "Right now — present tense." },
+      { "sentence": "Hon ___ på sin hund i parken.", "answer": "ropade", "form": "past", "hint": "Earlier — past tense." },
+      { "sentence": "Du behöver inte ___ så högt.", "answer": "ropa", "form": "infinitive", "hint": "After behöver — which form?" }
+    ]
+  },
+  {
+    "id": "v057",
+    "swedish": { "infinitive": "viska", "present": "viskar", "past": "viskade", "supine": "viskat", "imperative": "viska" },
+    "english": "to whisper",
+    "verbGroup": 1,
+    "contextSentences": [
+      { "sentence": "De ___ för att inte väcka barnet.", "answer": "viskar", "form": "present", "hint": "Right now — present tense." },
+      { "sentence": "Hon ___ något i mitt öra.", "answer": "viskade", "form": "past", "hint": "Earlier — past tense." },
+      { "sentence": "___ så att ingen hör!", "answer": "Viska", "form": "imperative", "hint": "A command — imperative." }
+    ]
+  },
+  {
+    "id": "v058",
+    "swedish": { "infinitive": "skrika", "present": "skriker", "past": "skrek", "supine": "skrikit", "imperative": "skrik" },
+    "english": "to scream / to shout",
+    "verbGroup": 4,
+    "contextSentences": [
+      { "sentence": "Bebisen ___ när den är hungrig.", "answer": "skriker", "form": "present", "hint": "Right now — present tense." },
+      { "sentence": "Han ___ högt av smärta.", "answer": "skrek", "form": "past", "hint": "Earlier — past tense." },
+      { "sentence": "Du har ___ hela morgonen.", "answer": "skrikit", "form": "supine", "hint": "After har — supine." }
+    ]
+  },
+  {
+    "id": "v059",
+    "swedish": { "infinitive": "ringa", "present": "ringer", "past": "ringde", "supine": "ringt", "imperative": "ring" },
+    "english": "to call / to phone",
+    "verbGroup": 2,
+    "contextSentences": [
+      { "sentence": "___ mig när du kommer fram!", "answer": "Ring", "form": "imperative", "hint": "A command — imperative." },
+      { "sentence": "Jag ___ till min mamma varje söndag.", "answer": "ringer", "form": "present", "hint": "Habit — present tense." },
+      { "sentence": "Hon ___ doktorn igår.", "answer": "ringde", "form": "past", "hint": "Yesterday — past tense." }
+    ]
+  },
+  {
+    "id": "v060",
+    "swedish": { "infinitive": "skriva", "present": "skriver", "past": "skrev", "supine": "skrivit", "imperative": "skriv" },
+    "english": "to write",
+    "verbGroup": 4,
+    "contextSentences": [
+      { "sentence": "Jag ___ ett brev till min vän.", "answer": "skriver", "form": "present", "hint": "Right now — present tense." },
+      { "sentence": "Han ___ en bok förra året.", "answer": "skrev", "form": "past", "hint": "Last year — past tense." },
+      { "sentence": "Har du ___ klart rapporten?", "answer": "skrivit", "form": "supine", "hint": "After har — supine." }
+    ]
+  },
+  {
+    "id": "v061",
+    "swedish": { "infinitive": "läsa", "present": "läser", "past": "läste", "supine": "läst", "imperative": "läs" },
+    "english": "to read",
+    "verbGroup": 2,
+    "contextSentences": [
+      { "sentence": "___ den här texten högt!", "answer": "Läs", "form": "imperative", "hint": "A command — imperative." },
+      { "sentence": "Hon ___ en spännande bok just nu.", "answer": "läser", "form": "present", "hint": "Right now — present tense." },
+      { "sentence": "Jag ___ tre böcker i somras.", "answer": "läste", "form": "past", "hint": "Last summer — past tense." }
+    ]
+  },
+  {
+    "id": "v062",
+    "swedish": { "infinitive": "förklara", "present": "förklarar", "past": "förklarade", "supine": "förklarat", "imperative": "förklara" },
+    "english": "to explain",
+    "verbGroup": 1,
+    "contextSentences": [
+      { "sentence": "Kan du ___ grammatiken igen?", "answer": "förklara", "form": "infinitive", "hint": "After kan — which form?" },
+      { "sentence": "Läraren ___ regeln på tavlan.", "answer": "förklarade", "form": "past", "hint": "Earlier — past tense." },
+      { "sentence": "Jag har ___ det flera gånger.", "answer": "förklarat", "form": "supine", "hint": "After har — supine." }
+    ]
+  },
+  {
+    "id": "v063",
+    "swedish": { "infinitive": "diskutera", "present": "diskuterar", "past": "diskuterade", "supine": "diskuterat", "imperative": "diskutera" },
+    "english": "to discuss",
+    "verbGroup": 1,
+    "contextSentences": [
+      { "sentence": "Vi ___ politik vid middagen.", "answer": "diskuterar", "form": "present", "hint": "Right now — present tense." },
+      { "sentence": "De ___ problemet i en timme.", "answer": "diskuterade", "form": "past", "hint": "Earlier — past tense." },
+      { "sentence": "Låt oss ___ saken lugnt.", "answer": "diskutera", "form": "infinitive", "hint": "After låt oss — which form?" }
+    ]
+  },
+  {
+    "id": "v064",
+    "swedish": { "infinitive": "nämna", "present": "nämner", "past": "nämnde", "supine": "nämnt", "imperative": "nämn" },
+    "english": "to mention",
+    "verbGroup": 2,
+    "contextSentences": [
+      { "sentence": "Han ___ aldrig sitt nya jobb.", "answer": "nämner", "form": "present", "hint": "Habit — present tense." },
+      { "sentence": "Hon ___ ditt namn på mötet.", "answer": "nämnde", "form": "past", "hint": "Earlier — past tense." },
+      { "sentence": "Jag har inte ___ det för någon.", "answer": "nämnt", "form": "supine", "hint": "After har — supine." }
+    ]
+  },
+  {
+    "id": "v065",
+    "swedish": { "infinitive": "säga", "present": "säger", "past": "sa", "supine": "sagt", "imperative": "säg" },
+    "english": "to say",
+    "verbGroup": 4,
+    "contextSentences": [
+      { "sentence": "___ vad du tycker!", "answer": "Säg", "form": "imperative", "hint": "A command — imperative." },
+      { "sentence": "Vad ___ du? Jag hörde inte.", "answer": "säger", "form": "present", "hint": "Right now — present tense." },
+      { "sentence": "Hon ___ ingenting på hela kvällen.", "answer": "sa", "form": "past", "hint": "Earlier — past tense." }
+    ]
+  },
+  {
+    "id": "v066",
+    "swedish": { "infinitive": "lyssna", "present": "lyssnar", "past": "lyssnade", "supine": "lyssnat", "imperative": "lyssna" },
+    "english": "to listen",
+    "verbGroup": 1,
+    "contextSentences": [
+      { "sentence": "___ noga på vad jag säger!", "answer": "Lyssna", "form": "imperative", "hint": "A command — imperative." },
+      { "sentence": "Jag ___ på musik när jag pluggar.", "answer": "lyssnar", "form": "present", "hint": "Habit — present tense." },
+      { "sentence": "Vi ___ på radio hela kvällen.", "answer": "lyssnade", "form": "past", "hint": "Earlier — past tense." }
+    ]
+  },
+  {
+    "id": "v067",
+    "swedish": { "infinitive": "höra", "present": "hör", "past": "hörde", "supine": "hört", "imperative": "hör" },
+    "english": "to hear",
+    "verbGroup": 2,
+    "contextSentences": [
+      { "sentence": "Jag ___ inte vad du säger.", "answer": "hör", "form": "present", "hint": "Right now — present tense." },
+      { "sentence": "Hon ___ ett konstigt ljud i natt.", "answer": "hörde", "form": "past", "hint": "Earlier — past tense." },
+      { "sentence": "Har du ___ de senaste nyheterna?", "answer": "hört", "form": "supine", "hint": "After har — supine." }
+    ]
+  },
+  {
+    "id": "v068",
+    "swedish": { "infinitive": "översätta", "present": "översätter", "past": "översatte", "supine": "översatt", "imperative": "översätt" },
+    "english": "to translate",
+    "verbGroup": 4,
+    "contextSentences": [
+      { "sentence": "Hon ___ böcker från engelska.", "answer": "översätter", "form": "present", "hint": "Habit — present tense." },
+      { "sentence": "Han ___ texten till svenska.", "answer": "översatte", "form": "past", "hint": "Earlier — past tense." },
+      { "sentence": "___ den här meningen!", "answer": "Översätt", "form": "imperative", "hint": "A command — imperative." }
+    ]
+  },
+  {
+    "id": "v069",
+    "swedish": { "infinitive": "stava", "present": "stavar", "past": "stavade", "supine": "stavat", "imperative": "stava" },
+    "english": "to spell",
+    "verbGroup": 1,
+    "contextSentences": [
+      { "sentence": "Hur ___ man det här ordet?", "answer": "stavar", "form": "present", "hint": "Right now — present tense." },
+      { "sentence": "Hon ___ sitt namn för sekreteraren.", "answer": "stavade", "form": "past", "hint": "Earlier — past tense." },
+      { "sentence": "Jag har alltid ___ ordet fel.", "answer": "stavat", "form": "supine", "hint": "After har — supine." }
+    ]
+  },
+  {
+    "id": "v070",
+    "swedish": { "infinitive": "betyda", "present": "betyder", "past": "betydde", "supine": "betytt", "imperative": "—" },
+    "english": "to mean",
+    "verbGroup": 2,
+    "contextSentences": [
+      { "sentence": "Vad ___ det här ordet?", "answer": "betyder", "form": "present", "hint": "Right now — present tense." },
+      { "sentence": "Resan ___ mycket för henne.", "answer": "betydde", "form": "past", "hint": "Earlier — past tense." },
+      { "sentence": "Det har alltid ___ mycket för mig.", "answer": "betytt", "form": "supine", "hint": "After har — supine." }
+    ]
+  },
+  {
+    "id": "v071",
+    "swedish": { "infinitive": "hälsa", "present": "hälsar", "past": "hälsade", "supine": "hälsat", "imperative": "hälsa" },
+    "english": "to greet / to say hello",
+    "verbGroup": 1,
+    "contextSentences": [
+      { "sentence": "___ på dina föräldrar från mig!", "answer": "Hälsa", "form": "imperative", "hint": "A command — imperative." },
+      { "sentence": "Hon ___ artigt på alla gäster.", "answer": "hälsar", "form": "present", "hint": "Habit — present tense." },
+      { "sentence": "Vi ___ på grannarna igår.", "answer": "hälsade", "form": "past", "hint": "Yesterday — past tense." }
+    ]
+  },
+  {
+    "id": "v072",
+    "swedish": { "infinitive": "tacka", "present": "tackar", "past": "tackade", "supine": "tackat", "imperative": "tacka" },
+    "english": "to thank",
+    "verbGroup": 1,
+    "contextSentences": [
+      { "sentence": "Jag ___ dig för hjälpen.", "answer": "tackar", "form": "present", "hint": "Right now — present tense." },
+      { "sentence": "Hon ___ värden för en trevlig kväll.", "answer": "tackade", "form": "past", "hint": "Earlier — past tense." },
+      { "sentence": "Du borde ___ honom för gåvan.", "answer": "tacka", "form": "infinitive", "hint": "After borde — which form?" }
+    ]
+  },
+  {
+    "id": "v073",
+    "swedish": { "infinitive": "svära", "present": "svär", "past": "svor", "supine": "svurit", "imperative": "svär" },
+    "english": "to swear / to curse",
+    "verbGroup": 4,
+    "contextSentences": [
+      { "sentence": "Han ___ när han blir arg.", "answer": "svär", "form": "present", "hint": "Habit — present tense." },
+      { "sentence": "Hon ___ högt när hon tappade telefonen.", "answer": "svor", "form": "past", "hint": "Earlier — past tense." },
+      { "sentence": "Du har ___ för mycket idag.", "answer": "svurit", "form": "supine", "hint": "After har — supine." }
+    ]
+  },
+  {
+    "id": "v074",
+    "swedish": { "infinitive": "presentera", "present": "presenterar", "past": "presenterade", "supine": "presenterat", "imperative": "presentera" },
+    "english": "to present / to introduce",
+    "verbGroup": 1,
+    "contextSentences": [
+      { "sentence": "Får jag ___ min kollega?", "answer": "presentera", "form": "infinitive", "hint": "After får — which form?" },
+      { "sentence": "Hon ___ projektet på mötet.", "answer": "presenterade", "form": "past", "hint": "Earlier — past tense." },
+      { "sentence": "Jag har redan ___ mig för chefen.", "answer": "presenterat", "form": "supine", "hint": "After har — supine." }
+    ]
+  },
+  {
+    "id": "v075",
+    "swedish": { "infinitive": "meddela", "present": "meddelar", "past": "meddelade", "supine": "meddelat", "imperative": "meddela" },
+    "english": "to inform / to notify",
+    "verbGroup": 1,
+    "contextSentences": [
+      { "sentence": "___ mig om något ändras!", "answer": "Meddela", "form": "imperative", "hint": "A command — imperative." },
+      { "sentence": "Företaget ___ alla anställda om beslutet.", "answer": "meddelade", "form": "past", "hint": "Earlier — past tense." },
+      { "sentence": "Jag har ___ läraren att jag är sjuk.", "answer": "meddelat", "form": "supine", "hint": "After har — supine." }
+    ]
+  }
+]

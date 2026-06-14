@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef, useCallback, useMemo } from "react";
 import { CURRICULUM, lessonContext } from "./curriculum.js";
+import BackLink from "./components/BackLink.jsx";
 
 const SYSTEM_PROMPT_BASE = `You are Anna, a friendly Swedish language tutor from Göteborg helping the user practise Swedish through conversation.
 
@@ -177,7 +178,14 @@ function renderInline(text) {
   return parts;
 }
 
-export default function SwedishTutor({ initialTab = "lessons", onHome = null, showTabs = true } = {}) {
+export default function SwedishTutor({
+  initialTab = "lessons",
+  onBack = null,
+  backLabel = "Home",
+  showTabs = true,
+  showSidebar = true,
+  startLessonId = null,
+} = {}) {
   const [conversations, setConversations] = useState(loadConvos);
   const [activeId, setActiveId] = useState(null);
   const [searchQ, setSearchQ] = useState("");
@@ -573,6 +581,18 @@ export default function SwedishTutor({ initialTab = "lessons", onHome = null, sh
     // Kick off the lesson — Claude introduces the scenario in Swedish.
   }, []);
 
+  // When mounted at /lessons/:id, auto-start that lesson once so the user lands
+  // directly in its conversation (header + banner show the lesson info).
+  const lessonStartedRef = useRef(false);
+  useEffect(() => {
+    if (!startLessonId || lessonStartedRef.current) return;
+    const lesson = CURRICULUM.find(l => l.id === startLessonId);
+    if (lesson) {
+      lessonStartedRef.current = true;
+      startLesson(lesson);
+    }
+  }, [startLessonId, startLesson]);
+
   const beginLesson = useCallback(() => {
     if (!active?.lessonId) return;
     callClaude("Börja lektionen.", active);
@@ -622,7 +642,7 @@ export default function SwedishTutor({ initialTab = "lessons", onHome = null, sh
       color: TEXT,
     }}>
       {/* Mobile backdrop */}
-      {isMobile && sidebarOpen && (
+      {showSidebar && isMobile && sidebarOpen && (
         <div
           onClick={() => setSidebarOpen(false)}
           style={{
@@ -633,6 +653,7 @@ export default function SwedishTutor({ initialTab = "lessons", onHome = null, sh
       )}
 
       {/* Sidebar */}
+      {showSidebar && (
       <aside style={isMobile ? {
         position: "fixed",
         top: 0, left: 0, bottom: 0,
@@ -792,6 +813,7 @@ export default function SwedishTutor({ initialTab = "lessons", onHome = null, sh
         </button>
         )}
       </aside>
+      )}
 
       {/* Main */}
       <main style={{
@@ -802,77 +824,67 @@ export default function SwedishTutor({ initialTab = "lessons", onHome = null, sh
         position: "relative",
         minWidth: 0,
       }}>
-        {/* Header */}
+        {/* Header — matches the Words pattern: "← Home" link above the title */}
         <header style={{
           flexShrink: 0,
-          padding: isMobile ? "16px 16px 12px" : "28px 32px 20px",
+          padding: isMobile ? "12px 16px 12px" : "20px 32px 16px",
           display: "flex",
-          alignItems: "center",
-          gap: 8,
+          flexDirection: "column",
+          gap: 6,
           background: PAGE_BG,
           borderBottom: `1px solid rgba(218,218,218,0.5)`,
         }}>
-          {onHome && (
-            <button
-              onClick={onHome}
-              aria-label="Back to home"
-              style={{
-                background: "transparent", border: "none",
-                width: 36, height: 36, marginRight: 4,
-                cursor: "pointer",
-                display: "flex", alignItems: "center", justifyContent: "center",
-              }}>
-              <Icon name="arrow_back" size={24} style={{ color: TEXT }} />
-            </button>
-          )}
-          {isMobile && (
-            <button
-              onClick={() => setSidebarOpen(true)}
-              aria-label="Open menu"
-              style={{
-                background: "transparent", border: "none",
-                width: 36, height: 36, marginRight: 4,
-                cursor: "pointer",
-                display: "flex", alignItems: "center", justifyContent: "center",
-              }}>
-              <Icon name="menu" size={24} style={{ color: TEXT }} />
-            </button>
-          )}
-          {editingTitle ? (
-            <input
-              ref={titleInputRef}
-              value={titleDraft}
-              onChange={(e) => setTitleDraft(e.target.value)}
-              onBlur={commitTitle}
-              onKeyDown={(e) => {
-                if (e.key === "Enter") commitTitle();
-                else if (e.key === "Escape") setEditingTitle(false);
-              }}
-              style={{
-                fontSize: 18, fontWeight: 600, color: TEXT,
-                fontFamily: FONT, border: `1px solid ${BORDER}`,
-                borderRadius: 6, padding: "4px 8px", outline: "none",
-                background: "white", minWidth: 240,
-              }}
-            />
-          ) : (
-            <h1
-              onClick={() => {
-                if (!active) return;
-                setTitleDraft(active.title);
-                setEditingTitle(true);
-              }}
-              style={{
-                margin: 0, fontSize: 18, fontWeight: 600, color: TEXT,
-                cursor: active ? "text" : "default",
-                display: "flex", alignItems: "center", gap: 6,
-              }}
-              title={active ? "Click to rename" : ""}
-            >
-              {headerTitle}
-              {active && <Icon name="edit" size={16} style={{ color: TEXT_PLACEHOLDER }} />}
-            </h1>
-          )}
+          {onBack && <BackLink onClick={onBack} label={backLabel} />}
+          <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+            {isMobile && showSidebar && (
+              <button
+                onClick={() => setSidebarOpen(true)}
+                aria-label="Open menu"
+                style={{
+                  background: "transparent", border: "none",
+                  width: 36, height: 36, marginLeft: -8,
+                  cursor: "pointer",
+                  display: "flex", alignItems: "center", justifyContent: "center",
+                }}>
+                <Icon name="menu" size={24} style={{ color: TEXT }} />
+              </button>
+            )}
+            {editingTitle ? (
+              <input
+                ref={titleInputRef}
+                value={titleDraft}
+                onChange={(e) => setTitleDraft(e.target.value)}
+                onBlur={commitTitle}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter") commitTitle();
+                  else if (e.key === "Escape") setEditingTitle(false);
+                }}
+                style={{
+                  fontSize: 18, fontWeight: 600, color: TEXT,
+                  fontFamily: FONT, border: `1px solid ${BORDER}`,
+                  borderRadius: 6, padding: "4px 8px", outline: "none",
+                  background: "white", minWidth: 240,
+                }}
+              />
+            ) : (
+              <h1
+                onClick={() => {
+                  if (!active) return;
+                  setTitleDraft(active.title);
+                  setEditingTitle(true);
+                }}
+                style={{
+                  margin: 0, fontSize: 18, fontWeight: 600, color: TEXT,
+                  cursor: active ? "text" : "default",
+                  display: "flex", alignItems: "center", gap: 6,
+                }}
+                title={active ? "Click to rename" : ""}
+              >
+                {headerTitle}
+                {active && <Icon name="edit" size={16} style={{ color: TEXT_PLACEHOLDER }} />}
+              </h1>
+            )}
+          </div>
         </header>
 
         {/* Lesson banner */}

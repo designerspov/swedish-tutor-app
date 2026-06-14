@@ -19,6 +19,15 @@ export const FONT = "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', san
 export const GREEN_LIGHT = "#E1F5EE";
 export const GREEN_DARK = "#117A55";
 
+// Feedback / status palette (from the word-practice spec).
+// Each pairs a foreground (text/icon) with a tinted background.
+export const CORRECT_FG = "#085041";
+export const CORRECT_BG = "#E1F5EE";
+export const WRONG_FG = "#791F1F";
+export const WRONG_BG = "#FCEBEB";
+export const NEW_FG = "#0C447C";   // "new"/active accent
+export const NEW_BG = "#E6F1FB";
+
 // Content column width — mobile-first. Fills small screens (16px padding),
 // caps on larger viewports so it still reads as a phone-width app.
 export const CONTENT_MAX = 440;

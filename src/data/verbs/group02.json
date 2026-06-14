@@ -1,0 +1,277 @@
+[
+  {
+    "id": "v026",
+    "swedish": { "infinitive": "gå", "present": "går", "past": "gick", "supine": "gått", "imperative": "gå" },
+    "english": "to walk / to go",
+    "verbGroup": 4,
+    "contextSentences": [
+      { "sentence": "Jag ___ till skolan varje dag.", "answer": "går", "form": "present", "hint": "Every day — present tense." },
+      { "sentence": "Igår ___ vi till parken.", "answer": "gick", "form": "past", "hint": "Yesterday — past tense." },
+      { "sentence": "Vi har ___ hela vägen hem.", "answer": "gått", "form": "supine", "hint": "After har — supine." }
+    ]
+  },
+  {
+    "id": "v027",
+    "swedish": { "infinitive": "springa", "present": "springer", "past": "sprang", "supine": "sprungit", "imperative": "spring" },
+    "english": "to run",
+    "verbGroup": 4,
+    "contextSentences": [
+      { "sentence": "Han ___ snabbt i parken.", "answer": "springer", "form": "present", "hint": "Right now — present tense." },
+      { "sentence": "Hon ___ till bussen i morse.", "answer": "sprang", "form": "past", "hint": "This morning — past tense." },
+      { "sentence": "___ fortare, vi är sena!", "answer": "Spring", "form": "imperative", "hint": "A command — imperative." }
+    ]
+  },
+  {
+    "id": "v028",
+    "swedish": { "infinitive": "köra", "present": "kör", "past": "körde", "supine": "kört", "imperative": "kör" },
+    "english": "to drive",
+    "verbGroup": 2,
+    "contextSentences": [
+      { "sentence": "Jag ___ bil till jobbet.", "answer": "kör", "form": "present", "hint": "Habit — present tense." },
+      { "sentence": "Vi ___ till stranden i somras.", "answer": "körde", "form": "past", "hint": "Last summer — past tense." },
+      { "sentence": "Han har ___ hela natten.", "answer": "kört", "form": "supine", "hint": "After har — supine." }
+    ]
+  },
+  {
+    "id": "v029",
+    "swedish": { "infinitive": "flyga", "present": "flyger", "past": "flög", "supine": "flugit", "imperative": "flyg" },
+    "english": "to fly",
+    "verbGroup": 4,
+    "contextSentences": [
+      { "sentence": "Fåglarna ___ söderut på hösten.", "answer": "flyger", "form": "present", "hint": "Generally — present tense." },
+      { "sentence": "Vi ___ till Spanien förra veckan.", "answer": "flög", "form": "past", "hint": "Last week — past tense." },
+      { "sentence": "Planet har ___ över havet.", "answer": "flugit", "form": "supine", "hint": "After har — supine." }
+    ]
+  },
+  {
+    "id": "v030",
+    "swedish": { "infinitive": "simma", "present": "simmar", "past": "simmade", "supine": "simmat", "imperative": "simma" },
+    "english": "to swim",
+    "verbGroup": 1,
+    "contextSentences": [
+      { "sentence": "Hon ___ i sjön varje sommar.", "answer": "simmar", "form": "present", "hint": "Habit — present tense." },
+      { "sentence": "Vi ___ i havet igår.", "answer": "simmade", "form": "past", "hint": "Yesterday — past tense." },
+      { "sentence": "Jag har ___ hundra meter.", "answer": "simmat", "form": "supine", "hint": "After har — supine." }
+    ]
+  },
+  {
+    "id": "v031",
+    "swedish": { "infinitive": "cykla", "present": "cyklar", "past": "cyklade", "supine": "cyklat", "imperative": "cykla" },
+    "english": "to cycle",
+    "verbGroup": 1,
+    "contextSentences": [
+      { "sentence": "Jag ___ till skolan på morgonen.", "answer": "cyklar", "form": "present", "hint": "Habit — present tense." },
+      { "sentence": "Han ___ tio kilometer igår.", "answer": "cyklade", "form": "past", "hint": "Yesterday — past tense." },
+      { "sentence": "___ försiktigt på vägen!", "answer": "Cykla", "form": "imperative", "hint": "A command — imperative." }
+    ]
+  },
+  {
+    "id": "v032",
+    "swedish": { "infinitive": "klättra", "present": "klättrar", "past": "klättrade", "supine": "klättrat", "imperative": "klättra" },
+    "english": "to climb",
+    "verbGroup": 1,
+    "contextSentences": [
+      { "sentence": "Barnen ___ i träden.", "answer": "klättrar", "form": "present", "hint": "Right now — present tense." },
+      { "sentence": "Vi ___ upp på berget i somras.", "answer": "klättrade", "form": "past", "hint": "Last summer — past tense." },
+      { "sentence": "Hon har ___ högt i klippan.", "answer": "klättrat", "form": "supine", "hint": "After har — supine." }
+    ]
+  },
+  {
+    "id": "v033",
+    "swedish": { "infinitive": "hoppa", "present": "hoppar", "past": "hoppade", "supine": "hoppat", "imperative": "hoppa" },
+    "english": "to jump",
+    "verbGroup": 1,
+    "contextSentences": [
+      { "sentence": "Grodan ___ i dammen.", "answer": "hoppar", "form": "present", "hint": "Right now — present tense." },
+      { "sentence": "Han ___ över staketet igår.", "answer": "hoppade", "form": "past", "hint": "Yesterday — past tense." },
+      { "sentence": "___ inte i soffan!", "answer": "Hoppa", "form": "imperative", "hint": "A command — imperative." }
+    ]
+  },
+  {
+    "id": "v034",
+    "swedish": { "infinitive": "falla", "present": "faller", "past": "föll", "supine": "fallit", "imperative": "fall" },
+    "english": "to fall",
+    "verbGroup": 4,
+    "contextSentences": [
+      { "sentence": "Löven ___ från träden på hösten.", "answer": "faller", "form": "present", "hint": "Generally — present tense." },
+      { "sentence": "Han ___ på isen igår.", "answer": "föll", "form": "past", "hint": "Yesterday — past tense." },
+      { "sentence": "Snön har ___ hela natten.", "answer": "fallit", "form": "supine", "hint": "After har — supine." }
+    ]
+  },
+  {
+    "id": "v035",
+    "swedish": { "infinitive": "åka", "present": "åker", "past": "åkte", "supine": "åkt", "imperative": "åk" },
+    "english": "to go / to travel (by vehicle)",
+    "verbGroup": 2,
+    "contextSentences": [
+      { "sentence": "Vi ___ buss till stan.", "answer": "åker", "form": "present", "hint": "Habit — present tense." },
+      { "sentence": "De ___ till fjällen förra vintern.", "answer": "åkte", "form": "past", "hint": "Last winter — past tense." },
+      { "sentence": "Jag har ___ tåg många gånger.", "answer": "åkt", "form": "supine", "hint": "After har — supine." }
+    ]
+  },
+  {
+    "id": "v036",
+    "swedish": { "infinitive": "vandra", "present": "vandrar", "past": "vandrade", "supine": "vandrat", "imperative": "vandra" },
+    "english": "to hike",
+    "verbGroup": 1,
+    "contextSentences": [
+      { "sentence": "Vi ___ i skogen på helgen.", "answer": "vandrar", "form": "present", "hint": "Habit — present tense." },
+      { "sentence": "De ___ längs leden i somras.", "answer": "vandrade", "form": "past", "hint": "Last summer — past tense." },
+      { "sentence": "Jag har ___ i bergen.", "answer": "vandrat", "form": "supine", "hint": "After har — supine." }
+    ]
+  },
+  {
+    "id": "v037",
+    "swedish": { "infinitive": "krypa", "present": "kryper", "past": "kröp", "supine": "krupit", "imperative": "kryp" },
+    "english": "to crawl",
+    "verbGroup": 4,
+    "contextSentences": [
+      { "sentence": "Bebisen ___ på golvet.", "answer": "kryper", "form": "present", "hint": "Right now — present tense." },
+      { "sentence": "Katten ___ under sängen.", "answer": "kröp", "form": "past", "hint": "Earlier — past tense." },
+      { "sentence": "Ormen har ___ in i gräset.", "answer": "krupit", "form": "supine", "hint": "After har — supine." }
+    ]
+  },
+  {
+    "id": "v038",
+    "swedish": { "infinitive": "rulla", "present": "rullar", "past": "rullade", "supine": "rullat", "imperative": "rulla" },
+    "english": "to roll",
+    "verbGroup": 1,
+    "contextSentences": [
+      { "sentence": "Bollen ___ ner för backen.", "answer": "rullar", "form": "present", "hint": "Right now — present tense." },
+      { "sentence": "Stenen ___ ner i dalen.", "answer": "rullade", "form": "past", "hint": "Earlier — past tense." },
+      { "sentence": "Hjulet har ___ iväg.", "answer": "rullat", "form": "supine", "hint": "After har — supine." }
+    ]
+  },
+  {
+    "id": "v039",
+    "swedish": { "infinitive": "sparka", "present": "sparkar", "past": "sparkade", "supine": "sparkat", "imperative": "sparka" },
+    "english": "to kick",
+    "verbGroup": 1,
+    "contextSentences": [
+      { "sentence": "Han ___ bollen hårt.", "answer": "sparkar", "form": "present", "hint": "Right now — present tense." },
+      { "sentence": "Hon ___ in målet igår.", "answer": "sparkade", "form": "past", "hint": "Yesterday — past tense." },
+      { "sentence": "___ bollen till mig!", "answer": "Sparka", "form": "imperative", "hint": "A command — imperative." }
+    ]
+  },
+  {
+    "id": "v040",
+    "swedish": { "infinitive": "kasta", "present": "kastar", "past": "kastade", "supine": "kastat", "imperative": "kasta" },
+    "english": "to throw",
+    "verbGroup": 1,
+    "contextSentences": [
+      { "sentence": "Barnet ___ stenar i vattnet.", "answer": "kastar", "form": "present", "hint": "Right now — present tense." },
+      { "sentence": "Hon ___ bollen till hunden.", "answer": "kastade", "form": "past", "hint": "Earlier — past tense." },
+      { "sentence": "___ inte skräp på marken!", "answer": "Kasta", "form": "imperative", "hint": "A command — imperative." }
+    ]
+  },
+  {
+    "id": "v041",
+    "swedish": { "infinitive": "dra", "present": "drar", "past": "drog", "supine": "dragit", "imperative": "dra" },
+    "english": "to pull",
+    "verbGroup": 4,
+    "contextSentences": [
+      { "sentence": "Hästen ___ vagnen.", "answer": "drar", "form": "present", "hint": "Right now — present tense." },
+      { "sentence": "Han ___ i repet hårt.", "answer": "drog", "form": "past", "hint": "Earlier — past tense." },
+      { "sentence": "Vi har ___ båten upp på land.", "answer": "dragit", "form": "supine", "hint": "After har — supine." }
+    ]
+  },
+  {
+    "id": "v042",
+    "swedish": { "infinitive": "lyfta", "present": "lyfter", "past": "lyfte", "supine": "lyft", "imperative": "lyft" },
+    "english": "to lift",
+    "verbGroup": 2,
+    "contextSentences": [
+      { "sentence": "Hon ___ tunga lådor på jobbet.", "answer": "lyfter", "form": "present", "hint": "Habit — present tense." },
+      { "sentence": "Han ___ stenen från marken.", "answer": "lyfte", "form": "past", "hint": "Earlier — past tense." },
+      { "sentence": "___ med benen, inte ryggen!", "answer": "Lyft", "form": "imperative", "hint": "A command — imperative." }
+    ]
+  },
+  {
+    "id": "v043",
+    "swedish": { "infinitive": "bära", "present": "bär", "past": "bar", "supine": "burit", "imperative": "bär" },
+    "english": "to carry",
+    "verbGroup": 4,
+    "contextSentences": [
+      { "sentence": "Jag ___ väskan själv.", "answer": "bär", "form": "present", "hint": "Right now — present tense." },
+      { "sentence": "Hon ___ barnet hela vägen hem.", "answer": "bar", "form": "past", "hint": "Earlier — past tense." },
+      { "sentence": "Vi har ___ alla lådor in.", "answer": "burit", "form": "supine", "hint": "After har — supine." }
+    ]
+  },
+  {
+    "id": "v044",
+    "swedish": { "infinitive": "flytta", "present": "flyttar", "past": "flyttade", "supine": "flyttat", "imperative": "flytta" },
+    "english": "to move (relocate)",
+    "verbGroup": 1,
+    "contextSentences": [
+      { "sentence": "De ___ till en ny lägenhet.", "answer": "flyttar", "form": "present", "hint": "Right now — present tense." },
+      { "sentence": "Vi ___ till Stockholm förra året.", "answer": "flyttade", "form": "past", "hint": "Last year — past tense." },
+      { "sentence": "Han har ___ många gånger.", "answer": "flyttat", "form": "supine", "hint": "After har — supine." }
+    ]
+  },
+  {
+    "id": "v045",
+    "swedish": { "infinitive": "svänga", "present": "svänger", "past": "svängde", "supine": "svängt", "imperative": "sväng" },
+    "english": "to turn",
+    "verbGroup": 2,
+    "contextSentences": [
+      { "sentence": "Bilen ___ till höger.", "answer": "svänger", "form": "present", "hint": "Right now — present tense." },
+      { "sentence": "Han ___ vänster vid korsningen.", "answer": "svängde", "form": "past", "hint": "Earlier — past tense." },
+      { "sentence": "___ höger vid kyrkan!", "answer": "Sväng", "form": "imperative", "hint": "A command — imperative." }
+    ]
+  },
+  {
+    "id": "v046",
+    "swedish": { "infinitive": "stiga", "present": "stiger", "past": "steg", "supine": "stigit", "imperative": "stig" },
+    "english": "to rise / to step",
+    "verbGroup": 4,
+    "contextSentences": [
+      { "sentence": "Solen ___ tidigt på sommaren.", "answer": "stiger", "form": "present", "hint": "Generally — present tense." },
+      { "sentence": "Han ___ av bussen vid torget.", "answer": "steg", "form": "past", "hint": "Earlier — past tense." },
+      { "sentence": "Temperaturen har ___ idag.", "answer": "stigit", "form": "supine", "hint": "After har — supine." }
+    ]
+  },
+  {
+    "id": "v047",
+    "swedish": { "infinitive": "landa", "present": "landar", "past": "landade", "supine": "landat", "imperative": "landa" },
+    "english": "to land",
+    "verbGroup": 1,
+    "contextSentences": [
+      { "sentence": "Planet ___ klockan tre.", "answer": "landar", "form": "present", "hint": "Soon — present tense." },
+      { "sentence": "Flyget ___ sent igår.", "answer": "landade", "form": "past", "hint": "Yesterday — past tense." },
+      { "sentence": "Vi har ___ i Stockholm.", "answer": "landat", "form": "supine", "hint": "After har — supine." }
+    ]
+  },
+  {
+    "id": "v048",
+    "swedish": { "infinitive": "resa", "present": "reser", "past": "reste", "supine": "rest", "imperative": "res" },
+    "english": "to travel",
+    "verbGroup": 2,
+    "contextSentences": [
+      { "sentence": "Vi ___ utomlands varje sommar.", "answer": "reser", "form": "present", "hint": "Habit — present tense." },
+      { "sentence": "De ___ till Italien förra året.", "answer": "reste", "form": "past", "hint": "Last year — past tense." },
+      { "sentence": "Jag har ___ mycket i Europa.", "answer": "rest", "form": "supine", "hint": "After har — supine." }
+    ]
+  },
+  {
+    "id": "v049",
+    "swedish": { "infinitive": "skynda", "present": "skyndar", "past": "skyndade", "supine": "skyndat", "imperative": "skynda" },
+    "english": "to hurry",
+    "verbGroup": 1,
+    "contextSentences": [
+      { "sentence": "Hon ___ till tåget varje morgon.", "answer": "skyndar", "form": "present", "hint": "Habit — present tense." },
+      { "sentence": "Vi ___ hem innan regnet.", "answer": "skyndade", "form": "past", "hint": "Earlier — past tense." },
+      { "sentence": "___ dig, vi är sena!", "answer": "Skynda", "form": "imperative", "hint": "A command — imperative." }
+    ]
+  },
+  {
+    "id": "v050",
+    "swedish": { "infinitive": "röra", "present": "rör", "past": "rörde", "supine": "rört", "imperative": "rör" },
+    "english": "to move / to touch",
+    "verbGroup": 2,
+    "contextSentences": [
+      { "sentence": "Han ___ inte på sig alls.", "answer": "rör", "form": "present", "hint": "Right now — present tense." },
+      { "sentence": "Hon ___ i grytan länge.", "answer": "rörde", "form": "past", "hint": "Earlier — past tense." },
+      { "sentence": "___ inte tavlan!", "answer": "Rör", "form": "imperative", "hint": "A command — imperative." }
+    ]
+  }
+]

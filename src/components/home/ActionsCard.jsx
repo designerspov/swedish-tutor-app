@@ -4,6 +4,7 @@ import {
   FONT, TEXT, TEXT_MUTED, PRIMARY, PRIMARY_LIGHT,
   GREEN_LIGHT, GREEN_DARK, CARD_BG, CARD_BORDER, CARD_RADIUS,
 } from "../../theme.js";
+import { getOverallStats } from "../../utils/progressStore.js";
 
 function ActionRow({ row, first }) {
   const navigate = useNavigate();
@@ -49,7 +50,7 @@ export default function ActionsCard({ currentLesson, currentWordGroup }) {
     {
       icon: "style", iconBg: GREEN_LIGHT, iconColor: GREEN_DARK,
       title: "Words",
-      subtitle: `${currentWordGroup.category} · Group ${currentWordGroup.groupNumber}`,
+      subtitle: `${getOverallStats().learned} of 1,000 verbs learned`,
       to: "/words",
     },
     {

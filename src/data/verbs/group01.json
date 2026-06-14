@@ -1,0 +1,277 @@
+[
+  {
+    "id": "v001",
+    "swedish": { "infinitive": "vara", "present": "är", "past": "var", "supine": "varit", "imperative": "var" },
+    "english": "to be",
+    "verbGroup": 4,
+    "contextSentences": [
+      { "sentence": "Jag ___ trött igår.", "answer": "var", "form": "past", "hint": "Yesterday — past tense." },
+      { "sentence": "Hon ___ min bästa vän.", "answer": "är", "form": "present", "hint": "Right now — present tense." },
+      { "sentence": "Han har ___ sjuk i en vecka.", "answer": "varit", "form": "supine", "hint": "After har — supine." }
+    ]
+  },
+  {
+    "id": "v002",
+    "swedish": { "infinitive": "ha", "present": "har", "past": "hade", "supine": "haft", "imperative": "ha" },
+    "english": "to have",
+    "verbGroup": 4,
+    "contextSentences": [
+      { "sentence": "Jag ___ en hund hemma.", "answer": "har", "form": "present", "hint": "Right now — present tense." },
+      { "sentence": "Vi ___ en bil förra året.", "answer": "hade", "form": "past", "hint": "Last year — past tense." },
+      { "sentence": "___ en bra dag!", "answer": "Ha", "form": "imperative", "hint": "A wish/command — imperative." }
+    ]
+  },
+  {
+    "id": "v003",
+    "swedish": { "infinitive": "göra", "present": "gör", "past": "gjorde", "supine": "gjort", "imperative": "gör" },
+    "english": "to do / to make",
+    "verbGroup": 4,
+    "contextSentences": [
+      { "sentence": "Vad ___ du nu?", "answer": "gör", "form": "present", "hint": "Right now — present tense." },
+      { "sentence": "Jag ___ läxan igår.", "answer": "gjorde", "form": "past", "hint": "Yesterday — past tense." },
+      { "sentence": "Han har ___ allt klart.", "answer": "gjort", "form": "supine", "hint": "After har — supine." }
+    ]
+  },
+  {
+    "id": "v004",
+    "swedish": { "infinitive": "kunna", "present": "kan", "past": "kunde", "supine": "kunnat", "imperative": "—" },
+    "english": "to be able to / can",
+    "verbGroup": 4,
+    "contextSentences": [
+      { "sentence": "Jag ___ simma bra.", "answer": "kan", "form": "present", "hint": "Right now — present tense." },
+      { "sentence": "Hon ___ inte komma igår.", "answer": "kunde", "form": "past", "hint": "Yesterday — past tense." },
+      { "sentence": "Vi har inte ___ sova.", "answer": "kunnat", "form": "supine", "hint": "After har — supine." }
+    ]
+  },
+  {
+    "id": "v005",
+    "swedish": { "infinitive": "vilja", "present": "vill", "past": "ville", "supine": "velat", "imperative": "—" },
+    "english": "to want",
+    "verbGroup": 4,
+    "contextSentences": [
+      { "sentence": "Jag ___ ha kaffe.", "answer": "vill", "form": "present", "hint": "Right now — present tense." },
+      { "sentence": "Han ___ gå hem tidigt.", "answer": "ville", "form": "past", "hint": "Earlier — past tense." },
+      { "sentence": "Vi har alltid ___ resa dit.", "answer": "velat", "form": "supine", "hint": "After har — supine." }
+    ]
+  },
+  {
+    "id": "v006",
+    "swedish": { "infinitive": "komma", "present": "kommer", "past": "kom", "supine": "kommit", "imperative": "kom" },
+    "english": "to come",
+    "verbGroup": 4,
+    "contextSentences": [
+      { "sentence": "___ hit!", "answer": "Kom", "form": "imperative", "hint": "A command — imperative." },
+      { "sentence": "Tåget ___ klockan tre.", "answer": "kommer", "form": "present", "hint": "Soon — present tense." },
+      { "sentence": "Hon ___ sent igår.", "answer": "kom", "form": "past", "hint": "Yesterday — past tense." }
+    ]
+  },
+  {
+    "id": "v007",
+    "swedish": { "infinitive": "ta", "present": "tar", "past": "tog", "supine": "tagit", "imperative": "ta" },
+    "english": "to take",
+    "verbGroup": 4,
+    "contextSentences": [
+      { "sentence": "Jag ___ bussen varje dag.", "answer": "tar", "form": "present", "hint": "Habit — present tense." },
+      { "sentence": "Han ___ en kaka.", "answer": "tog", "form": "past", "hint": "Earlier — past tense." },
+      { "sentence": "___ en paus nu!", "answer": "Ta", "form": "imperative", "hint": "A command — imperative." }
+    ]
+  },
+  {
+    "id": "v008",
+    "swedish": { "infinitive": "se", "present": "ser", "past": "såg", "supine": "sett", "imperative": "se" },
+    "english": "to see",
+    "verbGroup": 4,
+    "contextSentences": [
+      { "sentence": "Jag ___ dig nu.", "answer": "ser", "form": "present", "hint": "Right now — present tense." },
+      { "sentence": "Vi ___ en film igår.", "answer": "såg", "form": "past", "hint": "Yesterday — past tense." },
+      { "sentence": "Har du ___ min nyckel?", "answer": "sett", "form": "supine", "hint": "After har — supine." }
+    ]
+  },
+  {
+    "id": "v009",
+    "swedish": { "infinitive": "få", "present": "får", "past": "fick", "supine": "fått", "imperative": "få" },
+    "english": "to get / to be allowed to",
+    "verbGroup": 4,
+    "contextSentences": [
+      { "sentence": "Jag ___ ett brev varje vecka.", "answer": "får", "form": "present", "hint": "Habit — present tense." },
+      { "sentence": "Hon ___ en present igår.", "answer": "fick", "form": "past", "hint": "Yesterday — past tense." },
+      { "sentence": "Vi har ___ mycket hjälp.", "answer": "fått", "form": "supine", "hint": "After har — supine." }
+    ]
+  },
+  {
+    "id": "v010",
+    "swedish": { "infinitive": "veta", "present": "vet", "past": "visste", "supine": "vetat", "imperative": "vet" },
+    "english": "to know",
+    "verbGroup": 4,
+    "contextSentences": [
+      { "sentence": "Jag ___ svaret.", "answer": "vet", "form": "present", "hint": "Right now — present tense." },
+      { "sentence": "Han ___ inte var hon bodde.", "answer": "visste", "form": "past", "hint": "Earlier — past tense." },
+      { "sentence": "Vi har alltid ___ det.", "answer": "vetat", "form": "supine", "hint": "After har — supine." }
+    ]
+  },
+  {
+    "id": "v011",
+    "swedish": { "infinitive": "bli", "present": "blir", "past": "blev", "supine": "blivit", "imperative": "bli" },
+    "english": "to become",
+    "verbGroup": 4,
+    "contextSentences": [
+      { "sentence": "Det ___ kallt på vintern.", "answer": "blir", "form": "present", "hint": "Generally — present tense." },
+      { "sentence": "Hon ___ glad igår.", "answer": "blev", "form": "past", "hint": "Yesterday — past tense." },
+      { "sentence": "Han har ___ läkare.", "answer": "blivit", "form": "supine", "hint": "After har — supine." }
+    ]
+  },
+  {
+    "id": "v012",
+    "swedish": { "infinitive": "ge", "present": "ger", "past": "gav", "supine": "gett", "imperative": "ge" },
+    "english": "to give",
+    "verbGroup": 4,
+    "contextSentences": [
+      { "sentence": "Jag ___ dig boken nu.", "answer": "ger", "form": "present", "hint": "Right now — present tense." },
+      { "sentence": "Hon ___ mig en blomma.", "answer": "gav", "form": "past", "hint": "Earlier — past tense." },
+      { "sentence": "___ mig saltet, tack.", "answer": "Ge", "form": "imperative", "hint": "A command — imperative." }
+    ]
+  },
+  {
+    "id": "v013",
+    "swedish": { "infinitive": "stå", "present": "står", "past": "stod", "supine": "stått", "imperative": "stå" },
+    "english": "to stand",
+    "verbGroup": 4,
+    "contextSentences": [
+      { "sentence": "Boken ___ på hyllan.", "answer": "står", "form": "present", "hint": "Right now — present tense." },
+      { "sentence": "Vi ___ i kö länge.", "answer": "stod", "form": "past", "hint": "Earlier — past tense." },
+      { "sentence": "Han har ___ där hela dagen.", "answer": "stått", "form": "supine", "hint": "After har — supine." }
+    ]
+  },
+  {
+    "id": "v014",
+    "swedish": { "infinitive": "sitta", "present": "sitter", "past": "satt", "supine": "suttit", "imperative": "sitt" },
+    "english": "to sit",
+    "verbGroup": 4,
+    "contextSentences": [
+      { "sentence": "Jag ___ på en stol.", "answer": "sitter", "form": "present", "hint": "Right now — present tense." },
+      { "sentence": "Hon ___ vid fönstret igår.", "answer": "satt", "form": "past", "hint": "Yesterday — past tense." },
+      { "sentence": "Vi har ___ här i en timme.", "answer": "suttit", "form": "supine", "hint": "After har — supine." }
+    ]
+  },
+  {
+    "id": "v015",
+    "swedish": { "infinitive": "ligga", "present": "ligger", "past": "låg", "supine": "legat", "imperative": "ligg" },
+    "english": "to lie / to be situated",
+    "verbGroup": 4,
+    "contextSentences": [
+      { "sentence": "Katten ___ i soffan.", "answer": "ligger", "form": "present", "hint": "Right now — present tense." },
+      { "sentence": "Boken ___ på golvet igår.", "answer": "låg", "form": "past", "hint": "Yesterday — past tense." },
+      { "sentence": "Han har ___ sjuk i sängen.", "answer": "legat", "form": "supine", "hint": "After har — supine." }
+    ]
+  },
+  {
+    "id": "v016",
+    "swedish": { "infinitive": "lägga", "present": "lägger", "past": "la", "supine": "lagt", "imperative": "lägg" },
+    "english": "to lay / to put",
+    "verbGroup": 4,
+    "contextSentences": [
+      { "sentence": "Jag ___ boken på bordet.", "answer": "lägger", "form": "present", "hint": "Right now — present tense." },
+      { "sentence": "Hon ___ nyckeln i väskan.", "answer": "la", "form": "past", "hint": "Earlier — past tense (short form)." },
+      { "sentence": "___ den här!", "answer": "Lägg", "form": "imperative", "hint": "A command — imperative." }
+    ]
+  },
+  {
+    "id": "v017",
+    "swedish": { "infinitive": "sätta", "present": "sätter", "past": "satte", "supine": "satt", "imperative": "sätt" },
+    "english": "to set / to put",
+    "verbGroup": 4,
+    "contextSentences": [
+      { "sentence": "Jag ___ koppen på bordet.", "answer": "sätter", "form": "present", "hint": "Right now — present tense." },
+      { "sentence": "Han ___ sig på stolen.", "answer": "satte", "form": "past", "hint": "Earlier — past tense." },
+      { "sentence": "___ dig här!", "answer": "Sätt", "form": "imperative", "hint": "A command — imperative." }
+    ]
+  },
+  {
+    "id": "v018",
+    "swedish": { "infinitive": "hålla", "present": "håller", "past": "höll", "supine": "hållit", "imperative": "håll" },
+    "english": "to hold / to keep",
+    "verbGroup": 4,
+    "contextSentences": [
+      { "sentence": "Jag ___ i din hand.", "answer": "håller", "form": "present", "hint": "Right now — present tense." },
+      { "sentence": "Hon ___ tal igår.", "answer": "höll", "form": "past", "hint": "Yesterday — past tense." },
+      { "sentence": "___ i räcket!", "answer": "Håll", "form": "imperative", "hint": "A command — imperative." }
+    ]
+  },
+  {
+    "id": "v019",
+    "swedish": { "infinitive": "låta", "present": "låter", "past": "lät", "supine": "låtit", "imperative": "låt" },
+    "english": "to let / to sound",
+    "verbGroup": 4,
+    "contextSentences": [
+      { "sentence": "Det ___ bra!", "answer": "låter", "form": "present", "hint": "Right now — present tense." },
+      { "sentence": "Hon ___ mig vänta.", "answer": "lät", "form": "past", "hint": "Earlier — past tense." },
+      { "sentence": "___ mig hjälpa dig.", "answer": "Låt", "form": "imperative", "hint": "A command — imperative." }
+    ]
+  },
+  {
+    "id": "v020",
+    "swedish": { "infinitive": "behöva", "present": "behöver", "past": "behövde", "supine": "behövt", "imperative": "behöv" },
+    "english": "to need",
+    "verbGroup": 2,
+    "contextSentences": [
+      { "sentence": "Jag ___ hjälp nu.", "answer": "behöver", "form": "present", "hint": "Right now — present tense." },
+      { "sentence": "Vi ___ mer tid igår.", "answer": "behövde", "form": "past", "hint": "Yesterday — past tense." },
+      { "sentence": "Du har inte ___ oroa dig.", "answer": "behövt", "form": "supine", "hint": "After har — supine." }
+    ]
+  },
+  {
+    "id": "v021",
+    "swedish": { "infinitive": "börja", "present": "börjar", "past": "började", "supine": "börjat", "imperative": "börja" },
+    "english": "to begin / to start",
+    "verbGroup": 1,
+    "contextSentences": [
+      { "sentence": "Filmen ___ klockan sju.", "answer": "börjar", "form": "present", "hint": "Soon — present tense." },
+      { "sentence": "Lektionen ___ sent igår.", "answer": "började", "form": "past", "hint": "Yesterday — past tense." },
+      { "sentence": "Det har precis ___ regna.", "answer": "börjat", "form": "supine", "hint": "After har — supine." }
+    ]
+  },
+  {
+    "id": "v022",
+    "swedish": { "infinitive": "sluta", "present": "slutar", "past": "slutade", "supine": "slutat", "imperative": "sluta" },
+    "english": "to stop / to finish",
+    "verbGroup": 1,
+    "contextSentences": [
+      { "sentence": "Jobbet ___ klockan fem.", "answer": "slutar", "form": "present", "hint": "Today — present tense." },
+      { "sentence": "Hon ___ röka förra året.", "answer": "slutade", "form": "past", "hint": "Last year — past tense." },
+      { "sentence": "___ med det där!", "answer": "Sluta", "form": "imperative", "hint": "A command — imperative." }
+    ]
+  },
+  {
+    "id": "v023",
+    "swedish": { "infinitive": "bruka", "present": "brukar", "past": "brukade", "supine": "brukat", "imperative": "—" },
+    "english": "to usually do / used to",
+    "verbGroup": 1,
+    "contextSentences": [
+      { "sentence": "Jag ___ dricka te på morgonen.", "answer": "brukar", "form": "present", "hint": "Habit — present tense." },
+      { "sentence": "Vi ___ åka dit varje sommar.", "answer": "brukade", "form": "past", "hint": "Used to — past tense." },
+      { "sentence": "Han har alltid ___ läsa mycket.", "answer": "brukat", "form": "supine", "hint": "After har — supine." }
+    ]
+  },
+  {
+    "id": "v024",
+    "swedish": { "infinitive": "heta", "present": "heter", "past": "hette", "supine": "hetat", "imperative": "het" },
+    "english": "to be called / to be named",
+    "verbGroup": 2,
+    "contextSentences": [
+      { "sentence": "Jag ___ Anna.", "answer": "heter", "form": "present", "hint": "Right now — present tense." },
+      { "sentence": "Hunden ___ Max förut.", "answer": "hette", "form": "past", "hint": "Earlier — past tense." },
+      { "sentence": "Vad har han ___ hela tiden?", "answer": "hetat", "form": "supine", "hint": "After har — supine." }
+    ]
+  },
+  {
+    "id": "v025",
+    "swedish": { "infinitive": "finnas", "present": "finns", "past": "fanns", "supine": "funnits", "imperative": "finns" },
+    "english": "to exist / there is/are",
+    "verbGroup": 4,
+    "contextSentences": [
+      { "sentence": "Det ___ mjölk i kylen.", "answer": "finns", "form": "present", "hint": "Right now — present tense (deponent verb)." },
+      { "sentence": "Det ___ en affär här förr.", "answer": "fanns", "form": "past", "hint": "Earlier — past tense." },
+      { "sentence": "Det har alltid ___ problem.", "answer": "funnits", "form": "supine", "hint": "After har — supine." }
+    ]
+  }
+]
