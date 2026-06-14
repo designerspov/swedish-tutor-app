@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { CardPanel, CardLabel, Prompt, BigWord, Hint, TextField, PrimaryButton, GhostButton, HintButton, HintLine } from "./cardKit.jsx";
+import { CardPanel, CardLabel, Prompt, BigWord, Hint, TextField, PrimaryButton, GhostButton, HintButton, HintLine, ExampleHint, pickSentence } from "./cardKit.jsx";
 import FeedbackStrip from "./FeedbackStrip.jsx";
 import FormsBreakdown from "./FormsBreakdown.jsx";
 import { matchAnswer } from "../../../utils/answerMatcher.js";
@@ -31,7 +31,9 @@ export default function TranslateCard({ verb, onResult }) {
       />
 
       {!checked && showHint && (
-        <HintLine>Starts with “{inf[0]}” · {inf.length} letters</HintLine>
+        pickSentence(verb, { avoid: "infinitive" })
+          ? <ExampleHint sentence={pickSentence(verb, { avoid: "infinitive" })} />
+          : <HintLine>Starts with “{inf[0]}” · {inf.length} letters</HintLine>
       )}
 
       {!checked ? (

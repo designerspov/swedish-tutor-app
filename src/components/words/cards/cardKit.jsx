@@ -106,6 +106,37 @@ export function HintLine({ children }) {
   );
 }
 
+// Pick a context sentence to use as an example hint.
+//   prefer: return a sentence testing this form if one exists
+//   avoid:  skip sentences testing this form (so the hint isn't the answer)
+export function pickSentence(verb, { prefer, avoid } = {}) {
+  const list = verb.contextSentences || [];
+  if (!list.length) return null;
+  if (prefer) {
+    const m = list.find((s) => s.form === prefer);
+    if (m) return m;
+  }
+  const pool = avoid ? list.filter((s) => s.form !== avoid) : list;
+  return (pool.length ? pool : list)[0];
+}
+
+// Hint rendered as an example sentence with the target word left BLANK — the
+// surrounding context is the clue, not the answer.
+export function ExampleHint({ sentence }) {
+  if (!sentence) return null;
+  const [before, after] = sentence.sentence.split("___");
+  return (
+    <HintLine>
+      {before}
+      <span style={{
+        display: "inline-block", minWidth: 34, borderBottom: `2px dashed ${PRIMARY}`,
+        margin: "0 3px", height: 13, verticalAlign: "middle",
+      }} />
+      {after}
+    </HintLine>
+  );
+}
+
 // Short pedagogical nudge for a verb's conjugation group.
 export function verbGroupHint(n) {
   switch (n) {

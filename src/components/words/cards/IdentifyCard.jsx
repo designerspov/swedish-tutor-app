@@ -1,5 +1,5 @@
 import { useState, useMemo } from "react";
-import { CardPanel, CardLabel, Prompt, BigWord, TextField, PrimaryButton, GhostButton, HintButton, HintLine } from "./cardKit.jsx";
+import { CardPanel, CardLabel, Prompt, BigWord, TextField, PrimaryButton, GhostButton, HintButton, HintLine, ExampleHint, pickSentence } from "./cardKit.jsx";
 import FeedbackStrip from "./FeedbackStrip.jsx";
 import FormsBreakdown from "./FormsBreakdown.jsx";
 import { FONT, TEXT_MUTED } from "../../../theme.js";
@@ -53,7 +53,9 @@ export default function IdentifyCard({ verb, onResult }) {
       </div>
 
       {!checked && showHint && (
-        <HintLine>Group {verb.verbGroup} verb · infinitive starts with “{verb.swedish.infinitive[0]}”</HintLine>
+        pickSentence(verb, { prefer: shownForm })
+          ? <ExampleHint sentence={pickSentence(verb, { prefer: shownForm })} />
+          : <HintLine>Group {verb.verbGroup} verb · infinitive starts with “{verb.swedish.infinitive[0]}”</HintLine>
       )}
 
       {!checked ? (

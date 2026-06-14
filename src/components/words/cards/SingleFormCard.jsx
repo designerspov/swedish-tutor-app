@@ -1,7 +1,7 @@
 import { useState } from "react";
 import {
   CardPanel, CardLabel, Prompt, BigWord, Hint, TextField,
-  PrimaryButton, GhostButton, HintButton, HintLine, verbGroupHint,
+  PrimaryButton, GhostButton, HintButton, HintLine, verbGroupHint, ExampleHint, pickSentence,
 } from "./cardKit.jsx";
 import FeedbackStrip from "./FeedbackStrip.jsx";
 import FormsBreakdown from "./FormsBreakdown.jsx";
@@ -44,7 +44,11 @@ export default function SingleFormCard({ verb, form, onResult }) {
         autoFocus
       />
 
-      {!checked && showHint && <HintLine>{verbGroupHint(verb.verbGroup)}</HintLine>}
+      {!checked && showHint && (
+        pickSentence(verb, { prefer: form })
+          ? <ExampleHint sentence={pickSentence(verb, { prefer: form })} />
+          : <HintLine>{verbGroupHint(verb.verbGroup)}</HintLine>
+      )}
 
       {!checked ? (
         <>

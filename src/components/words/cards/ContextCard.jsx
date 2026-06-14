@@ -1,5 +1,5 @@
 import { useState, useMemo } from "react";
-import { CardPanel, CardLabel, Prompt, Hint, TextField, PrimaryButton, GhostButton, HintButton, HintLine } from "./cardKit.jsx";
+import { CardPanel, CardLabel, Prompt, Hint, TextField, PrimaryButton, GhostButton, HintButton, HintLine, ExampleHint, pickSentence } from "./cardKit.jsx";
 import FeedbackStrip from "./FeedbackStrip.jsx";
 import FormsBreakdown from "./FormsBreakdown.jsx";
 import { FONT, TEXT, PRIMARY } from "../../../theme.js";
@@ -66,7 +66,9 @@ export default function ContextCard({ verb, onResult }) {
       />
 
       {!checked && showHint && (
-        <HintLine>Starts with “{sentence.answer[0]}” · {sentence.answer.length} letters</HintLine>
+        pickSentence(verb, { avoid: sentence.form })
+          ? <ExampleHint sentence={pickSentence(verb, { avoid: sentence.form })} />
+          : <HintLine>Starts with “{sentence.answer[0]}” · {sentence.answer.length} letters</HintLine>
       )}
 
       {!checked ? (
