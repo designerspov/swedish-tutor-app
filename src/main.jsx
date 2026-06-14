@@ -1,9 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import SwedishTutor from "./SwedishTutor.jsx";
+import { RouterProvider } from "react-router-dom";
+import { router } from "./routes.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <SwedishTutor />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );

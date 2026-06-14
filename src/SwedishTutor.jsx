@@ -177,13 +177,13 @@ function renderInline(text) {
   return parts;
 }
 
-export default function SwedishTutor() {
+export default function SwedishTutor({ initialTab = "lessons", onHome = null, showTabs = true } = {}) {
   const [conversations, setConversations] = useState(loadConvos);
   const [activeId, setActiveId] = useState(null);
   const [searchQ, setSearchQ] = useState("");
   const [editingTitle, setEditingTitle] = useState(false);
   const [titleDraft, setTitleDraft] = useState("");
-  const [sidebarTab, setSidebarTab] = useState("lessons");
+  const [sidebarTab, setSidebarTab] = useState(initialTab);
   const [showVocab, setShowVocab] = useState(false);
   const [isMobile, setIsMobile] = useState(
     () => typeof window !== "undefined" && window.matchMedia("(max-width: 768px)").matches
@@ -689,6 +689,7 @@ export default function SwedishTutor() {
           </div>
         </div>
 
+        {showTabs && (
         <div style={{
           display: "flex", border: `1px solid ${BORDER}`, borderRadius: 8,
           padding: 2, gap: 2, flexShrink: 0,
@@ -711,6 +712,7 @@ export default function SwedishTutor() {
             );
           })}
         </div>
+        )}
 
         {sidebarTab === "chats" && (
           <div style={{
@@ -778,6 +780,7 @@ export default function SwedishTutor() {
           )}
         </div>
 
+        {(showTabs || sidebarTab === "chats") && (
         <button onClick={newConversation} style={{
           background: PURPLE, border: "none", borderRadius: 8,
           height: 44, padding: "0 12px", color: "#faf8ff",
@@ -787,6 +790,7 @@ export default function SwedishTutor() {
         }}>
           New Chat
         </button>
+        )}
       </aside>
 
       {/* Main */}
@@ -808,6 +812,19 @@ export default function SwedishTutor() {
           background: PAGE_BG,
           borderBottom: `1px solid rgba(218,218,218,0.5)`,
         }}>
+          {onHome && (
+            <button
+              onClick={onHome}
+              aria-label="Back to home"
+              style={{
+                background: "transparent", border: "none",
+                width: 36, height: 36, marginRight: 4,
+                cursor: "pointer",
+                display: "flex", alignItems: "center", justifyContent: "center",
+              }}>
+              <Icon name="arrow_back" size={24} style={{ color: TEXT }} />
+            </button>
+          )}
           {isMobile && (
             <button
               onClick={() => setSidebarOpen(true)}
